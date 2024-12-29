@@ -1,6 +1,7 @@
 
 import {create} from "zustand"
 
+// set the types
 interface CounterState {
     count: number;
     increment: () => void;
