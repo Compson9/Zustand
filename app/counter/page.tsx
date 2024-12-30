@@ -5,12 +5,9 @@ import useCounterStore from "@/store/counterStore";
 
 export default function CounterPage() {
 
+const {count, increment, decrement, reset} = useCounterStore((state)=> state)
 
 
-const count = useCounterStore((state)=> state.count);
-const increment = useCounterStore((state)=> state.increment);
-const decrement = useCounterStore((state)=> state.decrement);
-const reset = useCounterStore((state)=> state.reset);
 
 
   return (
